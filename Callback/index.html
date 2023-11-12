@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- What is Callback() ?
+    
+    This is function passed through an argument when calling another function
+
+    1. Là Hàm.
+    2. Được truyền qua đối số. -->
+    <script>
+        function myFunction(param) {
+            if (typeof param === 'function'){
+                param('Learn to learn');
+            }
+        }
+
+        function myCallback(value) {
+            console.log('Value: ', value);
+        }
+
+        myFunction(myCallback);
+    </script>
+</body>
+</html>
